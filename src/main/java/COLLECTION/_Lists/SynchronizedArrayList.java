@@ -32,7 +32,7 @@ public class SynchronizedArrayList {
         emList.add("Tom");
         emList.add("Kevin");
         emList.add("steve");
-          // We don't need explicit synchronization for any operation. add/traverse/remove
+          // We don't need explicit synchronization for any operation. add/traverse/remove.
 
         for (String s : emList) {
             System.out.println(s);
