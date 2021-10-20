@@ -33,43 +33,43 @@ public class ListMethods {
         // Clear out Array List
         //   ar1.clear();
 
-        //Clone array list
+        // Scenario #2  - Clone array list
         //ArrayList<String> cloneList = (ArrayList<String>) ar1.clone();
 
-        // Scenario #3  - contains()
+        // Scenario #4  - contains()
         System.out.println(ar1.contains("python"));
 
-        ///Scenario #4 - indexOf()
+        ///Scenario #5 - indexOf()
         System.out.println(ar1.indexOf("ruby") > 0);
 
-        //Scenario #5 - lastIndexOf()
+        //Scenario #6 - lastIndexOf()
         ArrayList<String> ar3 = new ArrayList<>(Arrays.asList("N", "L", "S", "Lis", "N"));
         System.out.println(ar3.lastIndexOf("N"));
 
-        //Scenario #6 - remove by index
+        //Scenario #7 - remove by index
         ar3.remove(1);
         System.out.println(ar3);
 
-        //Scenario #7 - remove by object
+        //Scenario #8 - remove by object
         ar3.remove("S");
         System.out.println(ar3);
 
-        //Scenario #8 - removeIf()
+        //Scenario #9 - removeIf()
         ArrayList<String> ar4 = new ArrayList<>(Arrays.asList("1", "2", "3", "4", "5", "6", "7", "8", "9", "10"));
         ar4.removeIf(num -> Integer.parseInt(num) % 2 == 0);
         System.out.println(ar4);
 
-        //Scenario #9 - retainAll()
+        //Scenario #10 - retainAll()
         ArrayList<String> ar5 = new ArrayList<>(Arrays.asList("4", "2", "3", "4", "5", "6", "8", "8", "9", "10"));
         System.out.println(ar5);
         //System.out.println(ar5.retainAll(Collections.singletonList("4")));
 
-        //Scenario #10 - subList()
+        //Scenario #11 - subList()
         ArrayList<String> ar5SubList = new ArrayList<>(ar5.subList(2, 4));
         System.out.println(ar5SubList);
 
         // Object Array
-        Object arr[] = ar5SubList.toArray();
+        Object[] arr = ar5SubList.toArray();
         System.out.println(Arrays.toString(arr));
 
 
